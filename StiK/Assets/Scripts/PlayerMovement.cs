@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -26,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
             jump = true;
         }
 
+
     }
 
     public void onLanding()
@@ -38,4 +39,6 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
         jump = false;
     }
+
+
 }
