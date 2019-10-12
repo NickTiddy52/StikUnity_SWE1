@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ColorLerper : MonoBehaviour
 {
-    public float speed = 1.0f;
+    public float period = 1.0f;
+    public float phase = 1.0f;
     public Color startColor;
     public Color endColor;
     float startTime;
@@ -18,7 +20,13 @@ public class ColorLerper : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float t = (Time.time - startTime) * speed;
-        GetComponent<Renderer>().material.color = Color.Lerp(startColor, endColor, t);
+        float pos = Mathf.Repeat(Time.time - startTime, period) / period;
+
+        if (pos < .5f) {
+            GetComponent<TextMeshProUGUI>().color = Color32.Lerp(startColor, endColor, pos * 2f);
+        }
+        else {
+            GetComponent<TextMeshProUGUI>().color = Color32.Lerp(endColor, startColor, (pos - .5f) * 2f);
+        }
     }
 }
