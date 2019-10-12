@@ -16,6 +16,14 @@ public class bullet : MonoBehaviour
     {
         Destroy(gameObject);
     }
+    
+    //Function is called when bullet is no longer visible, i.e. when it leaves the screen
+    private void OnBecameInvisible()
+    {
+		//Destroys object once it is no longer visible
+        Destroy(gameObject);
+    }
+    
     // Update is called once per frame
     void Update()
     {
