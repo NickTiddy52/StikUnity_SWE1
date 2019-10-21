@@ -9,19 +9,22 @@ public class ProcedureGeneration : MonoBehaviour
     public int height;
     public Tilemap tilemap;
     public Tile tile;
+    public Tile top;
+    public Tile hillLeft;
+    public Tile hillRight;
     // Start is called before the first frame update
     void Start()
     {
         //Initialize Map
         int[,] map  = new int[width,height];
         //Use Noise to generate map
-        map = RandomWalkTopSmoothed(map, Random.Range(0f, 1f), 2);
-        RenderMap(map, tilemap, tile);
+        map = RandomWalkTopSmoothed(map, Random.Range(0f, 1f), 3);
+        RenderMap(map, tilemap, tile,top,hillLeft, hillRight);
 
     }
 
 
-    public static void RenderMap(int[,] map, Tilemap tilemap, TileBase tile)
+    public static void RenderMap(int[,] map, Tilemap tilemap, TileBase tile, TileBase top, TileBase hillLeft, TileBase hillRight)
     {
         for (int x = 0; x < map.GetUpperBound(0); x++)
         {
@@ -29,7 +32,25 @@ public class ProcedureGeneration : MonoBehaviour
             {
                 if (map[x, y] == 1)
                 {
-                    tilemap.SetTile(new Vector3Int(x, y, 0), tile);
+                    if (x > 0 && map[x - 1, y] == 0 && map[x, y + 1] == 0)
+                    {
+                        tilemap.SetTile(new Vector3Int(x, y, 0), hillLeft);
+                    }
+                    else if (x < map.Length && map[x+1,y] == 0 && map[x,y+1] == 0)
+                    {
+                         tilemap.SetTile(new Vector3Int(x, y, 0), hillRight);
+
+                    }
+                    else if (map[x, y+1] == 0)
+                    {
+                        tilemap.SetTile(new Vector3Int(x, y, 0), top);
+
+                    }
+                    else
+                    {
+                        tilemap.SetTile(new Vector3Int(x, y, 0), tile);
+
+                    }
                 }
             }
         }
