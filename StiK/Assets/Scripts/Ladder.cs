@@ -7,7 +7,7 @@ public class Ladder : MonoBehaviour
     public GameObject player;
     public CharacterController2D controller;
     float verticalMove = 0f;
-    float ladderMoveSpeed = 20f;
+    public float ladderMoveSpeed = 20f;
     public bool canClimb = false;
 
     // Start is called before the first frame update

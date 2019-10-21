@@ -12,6 +12,8 @@ public class ProcedureGeneration : MonoBehaviour
     public Tile top;
     public Tile hillLeft;
     public Tile hillRight;
+    public GameObject[] obj = new GameObject[4];
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,10 +22,49 @@ public class ProcedureGeneration : MonoBehaviour
         //Use Noise to generate map
         map = RandomWalkTopSmoothed(map, Random.Range(0f, 1f), 3);
         RenderMap(map, tilemap, tile,top,hillLeft, hillRight);
-
+        RenderObstacles(map, obj);
     }
 
+    public static void RenderObstacles(int[,] map, GameObject[] obj)
+    {
+        float spawnX = 0;
+        float spawny = 0;
+        for (int x = 0; x < map.GetUpperBound(0); x++)
+        {
+            spawnX = x;
+            for (int y = 0; y < map.GetUpperBound(1); y++)
+            {
+                 spawny = y + 4f;
+                if(map[x,y] == 1)
+                {
+                    if (map[x, y + 1] == 0)
+                    {
+                        int rand = Random.Range(0, 20);
+                        if(rand == 3)
+                        {
+                            Instantiate(obj[1], new Vector3(spawnX, spawny, 0), Quaternion.identity);
 
+                        }
+                        if (rand == 2)
+                        {
+                            while(rand == 2)
+                            {
+                                Instantiate(obj[0], new Vector3(spawnX, spawny, 0), Quaternion.identity);
+                                Debug.Log("Random Val: " + rand);
+
+                                rand = Random.Range(0, 3);
+                                spawny += 4;
+                            }
+                            
+
+                        }
+
+                    }
+                }
+
+            }
+        }
+            }
     public static void RenderMap(int[,] map, Tilemap tilemap, TileBase tile, TileBase top, TileBase hillLeft, TileBase hillRight)
     {
         for (int x = 0; x < map.GetUpperBound(0); x++)
