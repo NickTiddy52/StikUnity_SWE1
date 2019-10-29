@@ -5,8 +5,9 @@ using UnityEngine;
 public class bullet : MonoBehaviour
 {
 
-    public float speed = 10f;
-    public Rigidbody2D rb; 
+    public float speed = 100f;
+    public Rigidbody2D rb;
+    private int maxDistance = 100;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,9 +17,9 @@ public class bullet : MonoBehaviour
     {
         Destroy(gameObject);
     }
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        if (transform.position.x < -maxDistance || transform.position.x > maxDistance)
+            Destroy(gameObject);
     }
 }

@@ -16,8 +16,10 @@ public class shoot : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            if(player.GetComponent<playerInventroy>().items[0].tag == "shoot")
-                Shoot();
+            if (player.GetComponent<playerInventroy>().items[player.GetComponent<playerInventroy>().getActiveSlot()] != null){
+                if (player.GetComponent<playerInventroy>().items[player.GetComponent<playerInventroy>().getActiveSlot()].tag == "shoot")
+                    Shoot();
+            }
         }
         
     }

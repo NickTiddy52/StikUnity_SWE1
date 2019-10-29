@@ -39,7 +39,11 @@ public class ProcedureGeneration : MonoBehaviour
                 {
                     if (map[x, y + 1] == 0)
                     {
-                        int rand = Random.Range(0, 20);
+                        int rand = Random.Range(0, 50);
+                        if(rand == 10 || rand == 20)
+                        {
+                            Instantiate(obj[2], new Vector3(spawnX, spawny + 10, 0), Quaternion.Euler(0,0,90));
+                        }
                         if(rand == 3)
                         {
                             Instantiate(obj[1], new Vector3(spawnX, spawny, 0), Quaternion.identity);
@@ -47,12 +51,11 @@ public class ProcedureGeneration : MonoBehaviour
                         }
                         if (rand == 2)
                         {
-                            while(rand == 2)
+                            rand = Random.Range(2, 4);
+                            for (int i = 0; i < rand; i++) 
                             {
                                 Instantiate(obj[0], new Vector3(spawnX, spawny, 0), Quaternion.identity);
                                 Debug.Log("Random Val: " + rand);
-
-                                rand = Random.Range(0, 3);
                                 spawny += 4;
                             }
                             
