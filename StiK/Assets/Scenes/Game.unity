@@ -224,6 +224,7 @@ MonoBehaviour:
   m_GroundCheck: {fileID: 838425359}
   m_CeilingCheck: {fileID: 572099964}
   m_CrouchDisableCollider: {fileID: 0}
+  jetPackThrust: 100
   OnLandEvent:
     m_PersistentCalls:
       m_Calls:
@@ -238,13 +239,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
   OnCrouchEvent:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: CharacterController2D+BoolEvent, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &72249102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -259,6 +256,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 72249101}
   playerAnimator: {fileID: 72249103}
+  jetPackAnimator: {fileID: 0}
+  fire: {fileID: 0}
   runSpeed: 40
 --- !u!95 &72249103
 Animator:
@@ -386,6 +385,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   items:
   - {fileID: 751342705}
+  - {fileID: 751342705}
+  - {fileID: 751342705}
+  - {fileID: 751342705}
+  activeSlot: 0
+  maxInventory: 4
 --- !u!114 &72249108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -931,8 +935,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14

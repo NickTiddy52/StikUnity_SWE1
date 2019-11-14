@@ -54,7 +54,11 @@ public class playerInventroy : MonoBehaviour
     {
         for(int i = 0; i < maxInventory; i++)
         {
-            if (items[i] == null) return i;
+            if (items[i] == null)
+            {
+                Debug.Log(i);
+                return i;
+            }
         }
         return maxInventory + 1;
     }
