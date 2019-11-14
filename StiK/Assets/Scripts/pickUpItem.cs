@@ -21,9 +21,9 @@ public class pickUpItem : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
-            DropItem();
+            parent.GetComponent<playerInventroy>().DropItem(this.gameObject);
 
-        if (parent.GetComponent<playerInventroy>().items[0] == this.gameObject)
+        if (parent.GetComponent<playerInventroy>().items[parent.GetComponent<playerInventroy>().getActiveSlot()] == this.gameObject)
         {
             this.gameObject.transform.position = placePoint.transform.position;
             if (Input.GetAxis("Horizontal") <= -.1)
@@ -39,28 +39,12 @@ public class pickUpItem : MonoBehaviour
         }
 
         if (pickUpValid && Input.GetKeyDown(KeyCode.F))
-            AddItem();
+            parent.GetComponent<playerInventroy>().AddItem(this.gameObject);
+            //AddItem();
 
       
     }
-    public void AddItem()
-    {
-        if (parent.GetComponent<playerInventroy>().items[0] != null)
-            DropItem();
 
-        parent.GetComponent<playerInventroy>().items[0] = this.gameObject;
-        Debug.Log("ItemPickedUp");
-    }
-
-    public void DropItem()
-    {
-        parent.GetComponent<playerInventroy>().items[0] = null;
-        Collider2D collide = this.GetComponent<Collider2D>();
-        collide.enabled = true;
-        Rigidbody2D body = this.GetComponent<Rigidbody2D>();
-        body.isKinematic = true;
-        body.constraints = RigidbodyConstraints2D.FreezeRotation;
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
