@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5236524937497092307
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8255633243249806357, guid: a7f9935ee8778974ab9092605915f377,
+        type: 3}
+      propertyPath: m_Name
+      value: RopeBridge
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255633243249806356, guid: a7f9935ee8778974ab9092605915f377,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255633243249806356, guid: a7f9935ee8778974ab9092605915f377,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255633243249806356, guid: a7f9935ee8778974ab9092605915f377,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.5522442
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255633243249806356, guid: a7f9935ee8778974ab9092605915f377,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255633243249806356, guid: a7f9935ee8778974ab9092605915f377,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255633243249806356, guid: a7f9935ee8778974ab9092605915f377,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255633243249806356, guid: a7f9935ee8778974ab9092605915f377,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255633243249806356, guid: a7f9935ee8778974ab9092605915f377,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255633243249806356, guid: a7f9935ee8778974ab9092605915f377,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255633243249806356, guid: a7f9935ee8778974ab9092605915f377,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255633243249806356, guid: a7f9935ee8778974ab9092605915f377,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255633244114703479, guid: a7f9935ee8778974ab9092605915f377,
+        type: 3}
+      propertyPath: playerJoint
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255633243338318560, guid: a7f9935ee8778974ab9092605915f377,
+        type: 3}
+      propertyPath: playerJoint
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255633243066938580, guid: a7f9935ee8778974ab9092605915f377,
+        type: 3}
+      propertyPath: playerJoint
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255633243462637130, guid: a7f9935ee8778974ab9092605915f377,
+        type: 3}
+      propertyPath: playerJoint
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255633243955579435, guid: a7f9935ee8778974ab9092605915f377,
+        type: 3}
+      propertyPath: playerJoint
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255633242297796084, guid: a7f9935ee8778974ab9092605915f377,
+        type: 3}
+      propertyPath: playerJoint
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255633243160785734, guid: a7f9935ee8778974ab9092605915f377,
+        type: 3}
+      propertyPath: playerJoint
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255633243950349394, guid: a7f9935ee8778974ab9092605915f377,
+        type: 3}
+      propertyPath: playerJoint
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255633243240108690, guid: a7f9935ee8778974ab9092605915f377,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255633243240108688, guid: a7f9935ee8778974ab9092605915f377,
+        type: 3}
+      propertyPath: playerJoint
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a7f9935ee8778974ab9092605915f377, type: 3}

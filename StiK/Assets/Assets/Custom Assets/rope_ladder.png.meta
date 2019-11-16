@@ -1,0 +1,246 @@
+fileFormatVersion: 2
+guid: 37046d5370af56e46bce91a02f043de4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2251246457898557928
+    second: rope_ladder_0
+  - first:
+      213: -7729934680264520547
+    second: rope_ladder_1
+  - first:
+      213: -3110849428903716407
+    second: rope_ladder_2
+  - first:
+      213: 6194483337531252210
+    second: rope_ladder_3
+  - first:
+      213: -8752370605965474879
+    second: rope_ladder_4
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 33, y: 0, z: 89, w: 46}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 0
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rope_ladder_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 96
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee620fa26dccc244d98885c1773a756d
+      internalID: -2251246457898557928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rope_ladder_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 96
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 086757dcc754ba94a88342f795a8ae0e
+      internalID: -7729934680264520547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rope_ladder_2
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 96
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a4780ee621c8764aac0d3afa9588a50
+      internalID: -3110849428903716407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rope_ladder_3
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 96
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d23925e77ac43b43be978c8e2957c96
+      internalID: 6194483337531252210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rope_ladder_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 25
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 31, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30476e388717bd149ae10adcec4851e9
+      internalID: -8752370605965474879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: -80, y: 16}
+      - {x: -80, y: -41}
+      - {x: -14, y: -41}
+      - {x: -14, y: 16}
+    - - {x: -71, y: -22}
+      - {x: -70, y: -16}
+      - {x: -58, y: -16}
+      - {x: -59, y: -22}
+    - - {x: -39, y: -22}
+      - {x: -38, y: -16}
+      - {x: -26, y: -16}
+      - {x: -27, y: -22}
+    - - {x: -78, y: 41}
+      - {x: -80, y: 39}
+      - {x: -80, y: 31}
+      - {x: -79, y: 30}
+      - {x: -74, y: 30}
+      - {x: -72, y: 32}
+      - {x: -72, y: 38}
+      - {x: -75, y: 41}
+    - - {x: -55, y: 41}
+      - {x: -56, y: 38}
+      - {x: -56, y: 32}
+      - {x: -55, y: 30}
+      - {x: -40, y: 30}
+      - {x: -40, y: 40}
+      - {x: -41, y: 41}
+    - - {x: -21, y: 41}
+      - {x: -24, y: 38}
+      - {x: -24, y: 32}
+      - {x: -22, y: 30}
+      - {x: -17, y: 30}
+      - {x: -15, y: 32}
+      - {x: -15, y: 38}
+      - {x: -18, y: 41}
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
