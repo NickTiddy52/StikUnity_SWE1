@@ -17,6 +17,7 @@ public class bullet : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
     void FixedUpdate()
     {
         if (transform.position.x < -maxDistance || transform.position.x > maxDistance)
