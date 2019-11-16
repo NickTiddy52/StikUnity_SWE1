@@ -21,9 +21,9 @@ public class pickUpItem : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
-            parent.GetComponent<playerInventroy>().DropItem(this.gameObject);
+            parent.GetComponent<playerInventory>().DropItem(this.gameObject);
 
-        if (parent.GetComponent<playerInventroy>().items[parent.GetComponent<playerInventroy>().getActiveSlot()] == this.gameObject)
+        if (parent.GetComponent<playerInventory>().items[parent.GetComponent<playerInventory>().getActiveSlot()] == this.gameObject)
         {
             this.gameObject.transform.position = placePoint.transform.position;
             if (Input.GetAxis("Horizontal") <= -.1)
@@ -39,7 +39,7 @@ public class pickUpItem : MonoBehaviour
         }
 
         if (pickUpValid && Input.GetKeyDown(KeyCode.F))
-            parent.GetComponent<playerInventroy>().AddItem(this.gameObject);
+            parent.GetComponent<playerInventory>().AddItem(this.gameObject);
             //AddItem();
 
       

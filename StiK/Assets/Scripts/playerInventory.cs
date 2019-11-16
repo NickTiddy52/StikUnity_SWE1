@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class playerInventroy : MonoBehaviour
+public class playerInventory : MonoBehaviour
 {
     public GameObject[] items = new GameObject[4];
     public int activeSlot = 0;
@@ -11,7 +11,7 @@ public class playerInventroy : MonoBehaviour
 
     public void AddItem(GameObject itemToAdd)
     {
-        Debug.Log("ItemPickedUp");
+        Debug.Log("ItemPickedUp" + items[0]);
         int addSlot = nextOpenSlot();
         if(addSlot != maxInventory + 1)
         {
