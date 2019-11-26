@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public Animator playerAnimator;
     public Animator jetPackAnimator;
     public GameObject fire;
+    public int playerNumber;
     public float runSpeed = 40f;
     float horizontalMove = 0f;
     private bool jetpackOn = false;
@@ -21,9 +22,9 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        horizontalMove = Input.GetAxisRaw("Horizontal" + playerNumber) * runSpeed;
         playerAnimator.SetFloat("Speed", Mathf.Abs(horizontalMove));
-        if(Input.GetButtonDown("Jump"))
+        if(Input.GetButtonDown("Jump" + playerNumber))
         {
             playerAnimator.SetBool("Jump", true);
             jump = true;
@@ -33,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (GetComponent<playerInventory>().items[GetComponent<playerInventory>().getActiveSlot()].tag == "jetpack")
             {
-                if (Input.GetButton("Jump"))
+                if (Input.GetButton("Jump" + playerNumber))
                 {
                     jetpackOn = true;
                     fire.SetActive(true);
