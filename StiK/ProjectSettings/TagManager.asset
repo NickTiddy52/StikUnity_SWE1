@@ -6,6 +6,8 @@ TagManager:
   tags:
   - shoot
   - jetpack
+  - player2
+  - player1
   layers:
   - Default
   - TransparentFX

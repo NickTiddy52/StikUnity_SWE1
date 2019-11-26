@@ -18,6 +18,10 @@ public class target : MonoBehaviour
     void Die()
     {
         Destroy(gameObject);
+        if(gameObject.name == "Player")
+        {
+
+        }
     }
     // Start is called before the first frame update
     void Start()

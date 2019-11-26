@@ -590,8 +590,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -122.5, y: -197.5}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -122.5, y: 83}
+  m_SizeDelta: {x: 160, y: 33.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &288030974
 MonoBehaviour:
@@ -800,8 +800,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1717442805}
   controller: {fileID: 1717442812}
+  player2: {fileID: 1279872583}
+  controller2: {fileID: 1279872591}
   ladderMoveSpeed: 100
   canClimb: 0
+  canClimb2: 0
 --- !u!61 &557025920
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -930,9 +933,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tst: {fileID: 288030972}
-  placePoint: {fileID: 2040870450}
-  parent: {fileID: 1717442805}
-  pickUpValid: 0
+  placePoint1: {fileID: 2040870450}
+  placePoint2: {fileID: 59457015}
+  parent1: {fileID: 1717442805}
+  parent2: {fileID: 1279872583}
+  pickUpValid1: 0
+  pickUpValid2: 0
 --- !u!50 &571000940
 Rigidbody2D:
   serializedVersion: 4
@@ -1505,9 +1511,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tst: {fileID: 288030972}
-  placePoint: {fileID: 2040870450}
-  parent: {fileID: 1717442805}
-  pickUpValid: 0
+  placePoint1: {fileID: 2040870450}
+  placePoint2: {fileID: 59457015}
+  parent1: {fileID: 1717442805}
+  parent2: {fileID: 1279872583}
+  pickUpValid1: 0
+  pickUpValid2: 0
 --- !u!58 &1202117434
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1627,6 +1636,7 @@ GameObject:
   - component: {fileID: 1279872585}
   - component: {fileID: 1279872584}
   - component: {fileID: 1279872592}
+  - component: {fileID: 1279872596}
   m_Layer: 8
   m_Name: Player2
   m_TagString: Untagged
@@ -1764,6 +1774,7 @@ MonoBehaviour:
   - {fileID: 0}
   activeSlot: 0
   maxInventory: 4
+  playerNumber: 2
 --- !u!114 &1279872591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1820,7 +1831,7 @@ MonoBehaviour:
   playerAnimator: {fileID: 1717442814}
   jetPackAnimator: {fileID: 957901102}
   fire: {fileID: 957901099}
-  playerNumber: 0
+  playerNumber: 2
   runSpeed: 80
 --- !u!95 &1279872593
 Animator:
@@ -1910,6 +1921,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1279872596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279872583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21211447307c0c5439f1c85d7035906f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 500
 --- !u!1 &1323148223
 GameObject:
   m_ObjectHideFlags: 0
@@ -2254,6 +2278,7 @@ GameObject:
   - component: {fileID: 1717442807}
   - component: {fileID: 1717442806}
   - component: {fileID: 1717442817}
+  - component: {fileID: 1717442818}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -2376,6 +2401,7 @@ MonoBehaviour:
   - {fileID: 0}
   activeSlot: 0
   maxInventory: 4
+  playerNumber: 1
 --- !u!114 &1717442812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2432,7 +2458,7 @@ MonoBehaviour:
   playerAnimator: {fileID: 1717442814}
   jetPackAnimator: {fileID: 957901102}
   fire: {fileID: 957901099}
-  playerNumber: 0
+  playerNumber: 1
   runSpeed: 80
 --- !u!95 &1717442814
 Animator:
@@ -2537,6 +2563,19 @@ MonoBehaviour:
   punchField: {fileID: 877756727}
   target: {fileID: 0}
   hitDamage: 10
+--- !u!114 &1717442818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717442805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21211447307c0c5439f1c85d7035906f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 500
 --- !u!1 &1846242915
 GameObject:
   m_ObjectHideFlags: 0
@@ -2635,9 +2674,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tst: {fileID: 288030972}
-  placePoint: {fileID: 1712999375}
-  parent: {fileID: 1717442805}
-  pickUpValid: 0
+  placePoint1: {fileID: 0}
+  placePoint2: {fileID: 0}
+  parent1: {fileID: 0}
+  parent2: {fileID: 0}
+  pickUpValid1: 0
+  pickUpValid2: 0
 --- !u!70 &1846242919
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
