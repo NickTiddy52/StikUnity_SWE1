@@ -9,6 +9,7 @@ public class openChest : MonoBehaviour
     public Animator chestAnimator;
     public GameObject chestItem;
     private bool pickUpValid;
+    private bool pickUpValidPlayer2;
     private bool opened =false;
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,15 @@ public class openChest : MonoBehaviour
 
         }
 
+
+		if (!opened && pickUpValidPlayer2 && Input.GetKeyDown(KeyCode.X))
+        {
+            chestAnimator.SetBool("isOpen", true);
+            opened = true;
+            tst.SetActive(false);
+            Instantiate(chestItem, this.transform.position, chestItem.transform.rotation);
+
+        }
     }
       
     private void OnTriggerEnter2D(Collider2D collision)
@@ -37,6 +47,12 @@ public class openChest : MonoBehaviour
             tst.SetActive(true);
             pickUpValid = true;
         }
+		
+		if (!opened && collision.gameObject.name.Equals("Player2"))
+        {
+            tst.SetActive(true);
+            pickUpValidPlayer2 = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -45,6 +61,12 @@ public class openChest : MonoBehaviour
         {
             tst.SetActive(false);
             pickUpValid = false;
+        }
+		
+		if (!opened && collision.gameObject.name.Equals("Player2"))
+        {
+            tst.SetActive(false);
+            pickUpValidPlayer2 = false;
         }
     }
 }

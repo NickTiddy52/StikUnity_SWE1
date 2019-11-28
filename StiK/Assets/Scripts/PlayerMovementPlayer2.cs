@@ -29,9 +29,9 @@ public class PlayerMovementPlayer2 : MonoBehaviour
             jump = true;
         }
 
-        if (GetComponent<playerInventroy>().items[GetComponent<playerInventroy>().getActiveSlot()] != null)
+        if (GetComponent<player2Inventory>().items[GetComponent<player2Inventory>().getActiveSlot()] != null)
         {
-            if (GetComponent<playerInventroy>().items[GetComponent<playerInventroy>().getActiveSlot()].tag == "jetpack")
+            if (GetComponent<player2Inventory>().items[GetComponent<player2Inventory>().getActiveSlot()].tag == "jetpack")
             {
                 if (Input.GetButton("Jump2"))
                 {
