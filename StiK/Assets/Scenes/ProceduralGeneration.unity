@@ -1495,6 +1495,8 @@ MonoBehaviour:
   range: 1000
   player: {fileID: 1717442805}
   shootPoint: {fileID: 2007007012}
+  player2: {fileID: 0}
+  shootPoint2: {fileID: 0}
   bulletPrefab: {fileID: 4483056693256398324, guid: 414a58ed9122f6349b2a00c999a04b84,
     type: 3}
   lineRenderer: {fileID: 127083949}
@@ -2674,10 +2676,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tst: {fileID: 288030972}
-  placePoint1: {fileID: 0}
-  placePoint2: {fileID: 0}
-  parent1: {fileID: 0}
-  parent2: {fileID: 0}
+  placePoint1: {fileID: 1712999375}
+  placePoint2: {fileID: 1642271039}
+  parent1: {fileID: 1717442805}
+  parent2: {fileID: 1279872583}
   pickUpValid1: 0
   pickUpValid2: 0
 --- !u!70 &1846242919

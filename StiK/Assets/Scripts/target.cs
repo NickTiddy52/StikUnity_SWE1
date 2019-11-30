@@ -5,7 +5,8 @@ using UnityEngine;
 public class target : MonoBehaviour
 {
     public float health = 50f;
-
+    public GameObject tst;
+    public GameObject button;
     public void takeDamage(float amount)
     {
         health -= amount;
@@ -17,11 +18,18 @@ public class target : MonoBehaviour
 
     void Die()
     {
-        Destroy(gameObject);
-        if(gameObject.name == "Player")
+        if (gameObject.name == "Player")
         {
-
+            tst.SetActive(true);
+            button.SetActive(true);
         }
+        if (gameObject.name == "Player2")
+        {
+            tst.SetActive(true);
+            button.SetActive(true);
+        }
+        Destroy(gameObject);
+
     }
     // Start is called before the first frame update
     void Start()
