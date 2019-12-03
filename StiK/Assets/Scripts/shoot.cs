@@ -11,10 +11,7 @@ public class shoot : MonoBehaviour
     public GameObject bulletPrefab;
     public LineRenderer lineRenderer;
 
-    private void Start()
-    {
-        Debug.Log(player.name);
-    }
+
     // Update is called once per frame
     void Update()
     {
@@ -22,7 +19,6 @@ public class shoot : MonoBehaviour
         {
             if (Input.GetButtonDown("Fire1"))
             {
-                Debug.Log("Fire1");
 
                 if (player.GetComponent<playerInventory>().items[player.GetComponent<playerInventory>().getActiveSlot()] != null)
                 {
@@ -36,7 +32,6 @@ public class shoot : MonoBehaviour
         {
             if (Input.GetButtonDown("Fire2"))
             {
-                Debug.Log("Fire2");
                 if (player.GetComponent<playerInventory>().items[player.GetComponent<playerInventory>().getActiveSlot()] != null)
                 {
                     if (player.GetComponent<playerInventory>().items[player.GetComponent<playerInventory>().getActiveSlot()].tag == "shoot")
