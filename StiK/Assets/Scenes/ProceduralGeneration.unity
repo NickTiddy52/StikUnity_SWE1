@@ -659,12 +659,13 @@ AudioSource:
   m_GameObject: {fileID: 363826331}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 96a163b88b2fc4cb18fb36859a8798a4,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 47ef5f53574804288b5b9a96eecd64d9, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1623,9 +1624,6 @@ MonoBehaviour:
   damage: 10
   range: 1000
   player: {fileID: 1717442805}
-  shootPoint: {fileID: 2007007012}
-  player2: {fileID: 0}
-  shootPoint2: {fileID: 0}
   bulletPrefab: {fileID: 4483056693256398324, guid: 414a58ed9122f6349b2a00c999a04b84,
     type: 3}
   lineRenderer: {fileID: 127083949}
