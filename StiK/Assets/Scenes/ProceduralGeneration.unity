@@ -611,8 +611,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
@@ -1767,6 +1765,7 @@ GameObject:
   - component: {fileID: 1279872584}
   - component: {fileID: 1279872592}
   - component: {fileID: 1279872596}
+  - component: {fileID: 1279872597}
   m_Layer: 8
   m_Name: Player2
   m_TagString: Untagged
@@ -1942,13 +1941,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
   OnCrouchEvent:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: CharacterController2D+BoolEvent, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1279872592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2070,6 +2065,24 @@ MonoBehaviour:
   health: 500
   tst: {fileID: 0}
   button: {fileID: 0}
+--- !u!114 &1279872597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279872583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d625cea2b5d8744ea1606717a6f9a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  range: 100
+  player: {fileID: 1279872583}
+  bulletPrefab: {fileID: 4483056693256398324, guid: 414a58ed9122f6349b2a00c999a04b84,
+    type: 3}
+  lineRenderer: {fileID: 0}
 --- !u!1 &1323148223
 GameObject:
   m_ObjectHideFlags: 0
@@ -2415,6 +2428,7 @@ GameObject:
   - component: {fileID: 1717442806}
   - component: {fileID: 1717442817}
   - component: {fileID: 1717442818}
+  - component: {fileID: 1717442819}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -2575,13 +2589,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
   OnCrouchEvent:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: CharacterController2D+BoolEvent, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1717442813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2718,6 +2728,24 @@ MonoBehaviour:
   health: 500
   tst: {fileID: 0}
   button: {fileID: 0}
+--- !u!114 &1717442819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717442805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d625cea2b5d8744ea1606717a6f9a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  range: 100
+  player: {fileID: 1717442805}
+  bulletPrefab: {fileID: 4483056693256398324, guid: 414a58ed9122f6349b2a00c999a04b84,
+    type: 3}
+  lineRenderer: {fileID: 0}
 --- !u!1 &1846242915
 GameObject:
   m_ObjectHideFlags: 0
